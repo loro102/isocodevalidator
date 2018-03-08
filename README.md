@@ -16,7 +16,7 @@ A simple Laravel 5 wrapper for the [IsoCodes Validation library](https://github.
 
 ### Step 1: Install Through Composer
 ``` bash
-composer require pixelpeter/laravel5-isocodes-validation
+composer require loro102/isocodesvalidation
 ```
 
 ### Step 2: Add the Service Provider (not needed with v2.x because of auto discovery)
@@ -24,7 +24,7 @@ Add the service provider in `app/config/app.php`
 ```php
 'provider' => [
     ...
-    Pixelpeter\IsoCodesValidation\IsoCodesValidationServiceProvider::class,
+    loro102\IsoCodesValidation\IsoCodesValidationServiceProvider::class,
     ...
 ];
 ```

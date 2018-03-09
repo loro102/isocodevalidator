@@ -211,8 +211,9 @@ class IsoCodesValidator extends BaseValidator
         return $this->runIsoCodesValidator(\IsoCodes\Gtin14::class, $value);
     }
 
+
     /**
-     * Validate an IBAN
+     * Validate a iban code
      *
      * @param $attribute
      * @param $value
@@ -221,8 +222,10 @@ class IsoCodesValidator extends BaseValidator
      */
     public function validateIban($attribute, $value, $parameters)
     {
-        return $this->runIsoCodesValidator(\IsoCodes\Iban::class, $value);
+        return Validator::isIban($value);
     }
+
+
 
     /**
      * Validate a "numéro de sécurité sociale" (INSEE)
